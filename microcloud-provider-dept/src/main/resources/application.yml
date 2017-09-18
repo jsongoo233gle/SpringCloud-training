@@ -1,10 +1,12 @@
 server:
   port: 8001
+
 mybatis:
   config-location: classpath:mybatis/mybatis.cfg.xml    # mybatis配置文件所在路径
-  type-aliases-package: com.x010.vo                      # 定义所有操作类的别名所在包
+  type-aliases-package: com.x010.vo                     # 定义所有操作类的别名所在包
   mapper-locations:                                     # 所有的mapper映射文件
   - classpath:mybatis/mapper/**/*.xml
+
 spring:
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource    # 配置当前要使用的数据源的操作类型
@@ -17,3 +19,13 @@ spring:
       initial-size: 5                               # 初始化提供的连接数
       max-total: 5                                  # 最大的连接数
       max-wait-millis: 200                          # 等待连接获取的最大超时时间
+
+security:
+  basic:
+    enabled: true             # 启用SpringSecurity安全配置项
+  user:
+    name: Cloud               # 认证用户名--|
+                              #             | > Cloud:Security@localhost:8081/path
+    password: Security        # 认证密码----|
+    role:                     # 授权角色
+    - USER
