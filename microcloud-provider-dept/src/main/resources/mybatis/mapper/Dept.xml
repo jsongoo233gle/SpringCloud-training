@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.x010.microcloud.dao.DeptDAO">
+	<insert id="create" parameterType="Dept">
+		INSERT INTO dept(deptname, loc) VALUES (#{deptName}, database())
+	</insert>
+
+	<select id="findById" resultType="Dept" parameterType="long">
+		SELECT * FROM dept WHERE deptno = #{deptno}
+	</select>
+
+	<select id="findAll" resultType="Dept">
+		SELECT * FROM dept
+	</select>
+</mapper>
