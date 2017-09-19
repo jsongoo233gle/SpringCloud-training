@@ -29,3 +29,4 @@ security:
     password: Security        # 认证密码----|
     role:                     # 授权角色
     - USER
+  sessions: stateless         # session状态配置
