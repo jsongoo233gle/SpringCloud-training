@@ -9,6 +9,7 @@
     <module>microcloud-api</module>
     <module>microcloud-provider-dept</module>
     <module>microcloud-consumer-dept</module>
+      <module>microcloud-security</module>
   </modules>
   <packaging>pom</packaging>
 
@@ -42,6 +43,12 @@
       <dependency>
         <groupId>com.x010</groupId>
         <artifactId>microcloud-api</artifactId>
+        <version>1.0</version>
+      </dependency>
+
+      <dependency>
+        <groupId>com.x010</groupId>
+        <artifactId>microcloud-security</artifactId>
         <version>1.0</version>
       </dependency>
 
