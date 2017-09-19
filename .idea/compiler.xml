@@ -9,6 +9,7 @@
         <module name="microcloud-api" />
         <module name="microcloud-consumer-dept" />
         <module name="microcloud-provider-dept" />
+        <module name="microcloud-security" />
         <module name="microcloudapi" />
       </profile>
     </annotationProcessing>
@@ -17,6 +18,7 @@
       <module name="microcloud-api" target="1.8" />
       <module name="microcloud-consumer-dept" target="1.8" />
       <module name="microcloud-provider-dept" target="1.8" />
+      <module name="microcloud-security" target="1.8" />
       <module name="microcloudapi" target="1.8" />
     </bytecodeTargetLevel>
   </component>
