@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/microcloud-api/microcloud-api.iml" filepath="$PROJECT_DIR$/microcloud-api/microcloud-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/microcloud-consumer-dept/microcloud-consumer-dept.iml" filepath="$PROJECT_DIR$/microcloud-consumer-dept/microcloud-consumer-dept.iml" />
       <module fileurl="file://$PROJECT_DIR$/microcloud-provider-dept/microcloud-provider-dept.iml" filepath="$PROJECT_DIR$/microcloud-provider-dept/microcloud-provider-dept.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microcloud-security/microcloud-security.iml" filepath="$PROJECT_DIR$/microcloud-security/microcloud-security.iml" />
     </modules>
   </component>
 </project>
