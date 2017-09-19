@@ -6,6 +6,7 @@ import com.x010.vo.Dept;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
+import javax.servlet.http.HttpServletRequest;
 import java.util.List;
 
 @RestController
@@ -31,6 +32,13 @@ public class DeptRest {
     public List<Dept> list() {
 
         return this.deptService.list();
+    }
+
+    // http://localhost:8001/provider/dept/sessionId
+    @GetMapping("/sessionId")
+    public Object getSessionId(HttpServletRequest request) {
+
+        return request.getSession().getId();
     }
 
 }
